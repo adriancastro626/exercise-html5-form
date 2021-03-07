@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1dcd9ef8a5.js" crossorigin="anonymous"></script>
+    <title>Form</title>
+</head>
+
+<body>
+    <form style="border: solid 1px gray; margin: 10px;">
+        <div>
+            <h2 style="background-color: rgb(196, 188, 188); padding: 5px;">
+                Payment form example
+            </h2>
+        </div>
+        <div class="form-row" style="padding: 10px;">
+            <div class="col-md-4 mb-3">
+                <label for="validationServer01">Card #</label>
+                <input type="text" class="form-control" id="validationServer01"
+                    placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                <div class="valid-feedback">
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationServer02">CVC #</label>
+                <input type="text" class="form-control" id="validationServer02" placeholder="CVC" required>
+                <div class="valid-feedback">
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationServerUsername">Amount</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend3">$</span>
+                    </div>
+                    <input type="text" class="form-control" id="validationServerUsername"
+                        placeholder="Amount" aria-describedby="inputGroupPrepend3" required>
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="form-row" style="padding: 10px;">
+            <div class="col-md-6 mb-3">
+                <label for="validationServer03">First Name</label>
+                <input type="text" class="form-control" id="validationServer03" placeholder="First Name"
+                    required>
+                <div class="invalid-feedback">
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationServer04">Last Name</label>
+                <input type="text" class="form-control" id="validationServer04" placeholder="Last Name"
+                    required>
+                <div class="invalid-feedback">
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="form-row" style="padding: 10px;">
+            <div class="col-md-6 mb-3">
+                <label for="validationServer03">City</label>
+                <input type="text" class="form-control" id="validationServer03" placeholder="City" required>
+                <div class="invalid-feedback">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationServer04">State</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle bg-light" type="button" id="dropdownMenu2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+                        Pick a State
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">Miami</button>
+                        <button class="dropdown-item" type="button">New York</button>
+                        <button class="dropdown-item" type="button">Other</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationServer05">Postal Code</label>
+                <input type="text" class="form-control" id="validationServer05" placeholder="Zip" required>
+                <div class="invalid-feedback">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row" style="padding: 10px;">
+            <div class="col-md-4 mb-3">
+                <label>We accept:</label>
+                <div class="form-check" style="background-color: gray; font-size: 25px;" class="rounded">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                        value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1" style="width:55px; color: white;">
+                        <i class="fab fa-cc-mastercard"></i>
+                    </label>
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option2" checked>
+                    <label class="form-check-label" for="exampleRadios2" style="width:55px; color: white;">
+                        <i class="fab fa-cc-visa"></i>
+                    </label>
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                        value="option3" checked>
+                    <label class="form-check-label" for="exampleRadios3" style="width:55px; color: white;">
+                        <i class="fab fa-cc-discover"></i>
+                    </label>
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4"
+                        value="option4" checked>
+                    <label class="form-check-label" for="exampleRadios4" style="width:0px; color: white;">
+                        <i class="fab fa-cc-amex"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3"></div>
+
+            <div class="col-md-5 mb-3">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <label>Add any notes here.</label>
+            </div>
+        
+
+        <div class="col-md-12 mb-3" style="background-color: rgb(196, 188, 188);">
+            <div>
+                <div>
+                    <button class="btn btn-primary float-right" type="submit" style="margin: 5px;">Send</button>
+                    <button class="btn btn-primary float-right" type="submit" style="margin: 5px; background-color: gray; border: none;">Cancel</button>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
